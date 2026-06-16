@@ -27,7 +27,6 @@ class MovieLensDataset(Dataset):
 
 if __name__ == "__main__":
 
-    # --- 4. TRAINING SETUP ---
     # load data
     train_df = pd.read_csv('dataprep/train.csv')
     test_df = pd.read_csv('dataprep/test.csv')
@@ -35,7 +34,7 @@ if __name__ == "__main__":
     print(f"Dataset shape: {train_df.shape}")
     print(f"Target distribution: {train_df['target'].value_counts()}")
 
-    
+
     # Feature dimensions
     feature_dims = {
         'UserID': train_df['UserID'].nunique(),
