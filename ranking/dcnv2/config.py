@@ -1,0 +1,1 @@
+categorical_features = ['UserID', 'MovieID', 'Gender', 'Age', 'Occupation']
