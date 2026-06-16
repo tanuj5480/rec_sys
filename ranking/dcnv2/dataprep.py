@@ -27,11 +27,7 @@ print(f"Using device: {device}")
 # --- 1. DATA PREPARATION ---
 print("--- Step 1: Preparing MovieLens 1M Data ---")
 
-# Download and extract data
-# if not os.path.exists('ml-1m.zip'):
-#     print("Downloading MovieLens 1M dataset...")
-#     os.system("wget -q http://files.grouplens.org/datasets/movielens/ml-1m.zip")
-#     os.system("unzip -q ml-1m.zip")
+# Download and extract data (downloaded locally from http://files.grouplens.org/datasets/movielens/ml-1m.zip)
 
 # Load data
 data_dir = "ml-1m/"
