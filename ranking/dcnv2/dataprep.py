@@ -4,9 +4,6 @@ import zipfile
 import requests
 import pandas as pd
 import numpy as np
-# import matplotlib.pyplot as plt
-# import seaborn as sns
-# from tqdm import tqdm
 import config
 
 
@@ -15,15 +12,9 @@ import config
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import roc_auc_score
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
 # --- Environment Setup ---
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
-device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
-print(f"Using device: {device}")
-
 # --- 1. DATA PREPARATION ---
 print("--- Step 1: Preparing MovieLens 1M Data ---")
 
